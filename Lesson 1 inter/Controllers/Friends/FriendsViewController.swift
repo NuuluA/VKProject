@@ -17,6 +17,7 @@ class FriendsViewController: UIViewController {
     
     let imagePicker = UIImagePickerController()//galaryden surot alysh u4un controller
     
+    var getFriends = [GetFriends]()
     var currentUserArray = [User]()
     var nameTitle = [String]()
     var nameDict = [String: [String]]()
@@ -43,25 +44,25 @@ class FriendsViewController: UIViewController {
         avatarImage.isUserInteractionEnabled = true
         
         shadow()
-//        filterName()
+        
     }
     
-    func filterName() {
-        for name in currentUserArray {
-            guard let nameLetter = name.name?.index(name.name!.startIndex, offsetBy: 1) else { return }
-            let nameKey = String(name.name![..<nameLetter])
-            
-            if var nameValue = nameDict[nameKey] {
-                nameValue.append(name.name!)
-                nameDict[nameKey] = nameValue
-            } else {
-                nameDict[nameKey] = [name.name!]
-            }
-            nameTitle = [String](nameDict.keys)
-            nameTitle = nameTitle.sorted(by: {$0 < $1})
-            
-        }
-    }
+//    func filterName() {
+//        for name in currentUserArray {
+//            guard let nameLetter = name.name?.index(name.name!.startIndex, offsetBy: 1) else { return }
+//            let nameKey = String(name.name![..<nameLetter])
+//            
+//            if var nameValue = nameDict[nameKey] {
+//                nameValue.append(name.name!)
+//                nameDict[nameKey] = nameValue
+//            } else {
+//                nameDict[nameKey] = [name.name!]
+//            }
+//            nameTitle = [String](nameDict.keys)
+//            nameTitle = nameTitle.sorted(by: {$0 < $1})
+//            
+//        }
+//    }
     
     //Sozdali recognizer Tap func
     @objc func changePhoto(_ gesture: UITapGestureRecognizer) {

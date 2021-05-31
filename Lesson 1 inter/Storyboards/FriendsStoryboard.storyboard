@@ -12,7 +12,7 @@
         <!--Друзья-->
         <scene sceneID="ML7-c1-DEZ">
             <objects>
-                <viewController id="IYd-kT-7ag" customClass="FriendsViewController" customModule="Lesson_1_inter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FriendsViewController" id="IYd-kT-7ag" customClass="FriendsViewController" customModule="Lesson_1_inter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="feQ-4Y-8u2" customClass="GradientView" customModule="Lesson_1_inter" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
