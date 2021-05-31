@@ -28,7 +28,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        
         passwordTF.delegate = self
         userNameTF.delegate = self
         snakeAnimation()
